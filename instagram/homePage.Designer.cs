@@ -35,6 +35,9 @@ namespace instagram
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,17 +79,46 @@ namespace instagram
             // 
             // tabControl1
             // 
-            this.tabControl1.Location = new System.Drawing.Point(12, 151);
+            this.tabControl1.Location = new System.Drawing.Point(12, 181);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(365, 287);
+            this.tabControl1.Size = new System.Drawing.Size(365, 257);
             this.tabControl1.TabIndex = 5;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(63, 152);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(258, 23);
+            this.textBox5.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Buscar:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(327, 151);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(52, 24);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // homePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(391, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -110,5 +142,8 @@ namespace instagram
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
